@@ -1,3 +1,20 @@
 {
-    "RedisHost": "redis"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "eks:*",
+        "ec2:*",
+        "iam:PassRole",
+        "cloudformation:*",
+        "autoscaling:*",
+        "elasticloadbalancing:*",
+        "logs:*",
+        "ecr:*",
+        "sts:GetCallerIdentity"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
